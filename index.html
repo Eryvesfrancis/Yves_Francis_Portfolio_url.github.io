@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John - Projects</title>
+    <title>John's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,36 +11,53 @@
     <header class="header">
         <div class="logo">John</div>
         <ul class="nav-links">
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="experience.html">Experience</a></li>
+            <li><a href="#" class="tab-button active" data-tab="projects">Projects</a></li>
+            <li><a href="#" class="tab-button" data-tab="about">About</a></li>
+            <li><a href="#" class="tab-button" data-tab="experience">Experience</a></li>
         </ul>
     </header>
 
-    <main class="projects-section">
-        <div class="projects-container">
-            <div class="project-card">
-                <div class="image-container" id="project1-img"></div>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-                <a href="https://github.com/yourusername/project-1-repo" class="github-btn">GitHub</a>
-            </div>
+    <main class="main-content">
+        <div id="projects" class="tab-content active">
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="image-container" id="project1-img"></div>
+                    <h2>Projects</h2>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                    <a href="https://github.com/yourusername/project-1-repo" class="github-btn">GitHub</a>
+                </div>
 
-            <div class="project-card">
-                <div class="image-container" id="project2-img"></div>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                <a href="https://github.com/yourusername/project-2-repo" class="github-btn">GitHub</a>
-            </div>
+                <div class="project-card">
+                    <div class="image-container" id="project2-img"></div>
+                    <h2>Projects</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    <a href="https://github.com/yourusername/project-2-repo" class="github-btn">GitHub</a>
+                </div>
 
-            <div class="project-card">
-                <div class="image-container" id="project3-img"></div>
-                <h2>Penetration Testing</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                <a href="https://github.com/yourusername/project-3-repo" class="github-btn">GitHub</a>
+                <div class="project-card">
+                    <div class="image-container" id="project3-img"></div>
+                    <h2>Penetration Testing</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    <a href="https://github.com/yourusername/project-3-repo" class="github-btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="tab-content">
+            <div class="content-container">
+                <h1>About Me</h1>
+                <p>Write your biography here. Talk about your passion for cybersecurity, your skills, your journey, and what you hope to achieve. This is where you can tell your personal story to potential employers or collaborators.</p>
+            </div>
+        </div>
+
+        <div id="experience" class="tab-content">
+            <div class="content-container">
+                <h1>My Experience</h1>
+                <p>List your professional experience here. Use a clear format to outline your job titles, company names, dates of employment, and key responsibilities or achievements. You can also include certifications, volunteer work, or other relevant experience.</p>
             </div>
         </div>
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
